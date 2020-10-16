@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url(/src/assets/TTNorms-Medium.otf);
+
+:root {
+  --active-bg: #0050a6;
+  --active-color: white;
+}
 
 *,
 *::after,
@@ -6,12 +11,25 @@
   box-sizing: border-box;
 }
 
+:root {
+  --active-bg: #0050a6;
+  --active-color: white;
+}
+
+/* Typography */
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+}
+
 html {
   font-size: 16px;
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
+  font-family: "TTNorms-Medium", sans-serif;
   margin: 0;
 }
 
@@ -21,5 +39,10 @@ select,
 optgroup,
 textarea {
   margin: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "TTNorms-Medium", sans-serif;
+}
+
+.active__btn {
+  background-color: #0050a6;
+  color: var(--active-color);
 }
