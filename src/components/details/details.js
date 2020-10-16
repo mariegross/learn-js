@@ -1,15 +1,14 @@
 import { createElement } from "../../utils/elements";
-import calendarIconSrc from "../../assets/calendar-symbol.svg";
 
-export const createDetailElement = () => {
+export const createDetailElement = (detail) => {
   const detailText = createElement("div", {
     className: "detail__text",
     children: [
       createElement("h3", {
-        innerText: "Departure",
+        innerText: detail.title,
       }),
       createElement("p", {
-        innerText: "12 Feb, 2020",
+        innerText: detail.subline,
       }),
     ],
   });
@@ -19,8 +18,8 @@ export const createDetailElement = () => {
     children: [
       createElement("img", {
         className: "detail__icon",
-        src: calendarIconSrc,
-        alt: "Calendar Icon",
+        src: detail.imgSrc,
+        alt: `Icon of ${detail.title}`,
       }),
       detailText,
     ],

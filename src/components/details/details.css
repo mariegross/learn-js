@@ -1,16 +1,27 @@
 .detail__btn {
   height: 100px;
   width: 170px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 30% 1fr;
   border: none;
   background: #f6f9ff;
-  padding: 0 18px;
+  padding: 0 0 0 20px;
 }
 
 .detail__btn img {
-  margin-bottom: 6px;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  margin: 0 8px 6px 0;
+}
+
+.detail__text {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.detail__text > * {
+  text-align: left;
 }
 
 .detail__text h3 {
