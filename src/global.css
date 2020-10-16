@@ -20,8 +20,10 @@
 
 h3 {
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 15px;
+  letter-spacing: 0.25em;
+  font-size: 12px;
+  color: #6294ca;
+  font-weight: 700;
 }
 
 html {
@@ -45,4 +47,11 @@ textarea {
 .active__btn {
   background-color: #0050a6;
   color: var(--active-color);
+}
+
+p {
+  color: black;
+  font-size: 15px;
+  letter-spacing: 0.025em;
+  margin: 5px 0 0;
 }

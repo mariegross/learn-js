@@ -8,5 +8,9 @@
   justify-content: center;
 }
 .action__icon {
-  margin-right: 20px;
+  margin-right: 15px;
+}
+
+.action__btn h3 {
+  color: white;
 }

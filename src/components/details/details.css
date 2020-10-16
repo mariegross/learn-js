@@ -4,4 +4,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: none;
+  background: #f6f9ff;
+  padding: 0 18px;
+}
+
+.detail__btn img {
+  margin-bottom: 6px;
+}
+
+.detail__text h3 {
+  margin: 0;
 }
